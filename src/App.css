@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root{
+  --text-color-white: #fff;
+  --text-color-black: #000;
+  --color-primary: #009579;
+  --color-primary-dark: #007f67;
+  --color-secondary: #252c6a;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 14px;
+  --font-size-desktop: 16px;
+  --font-size-ipad: 1rem;
+  --font-size-phone: 1rem;
+  --btn-padding: 16px 32px;
+  --btn-width: 220px;
+  --btn-border-radius: 1rem;
+  --transition: 1.2s ease ;
+  --transition-two: 0.3s ease-in-out;
+  --chinese-bg-color: #141412;
+  --cetacean-blue-bg-color: #0F0D35;
+  --ripo-mango-bg-color: #FDC128;
+  --xanadu-bg-color: #728A7C;
+  --deep-pink-bg-color: #F52D3A;
+  --charleston-green-bg-color: #252A36;
+  --coral-reef-bg-color: #F37F64;
+  --jungle-green-bg-color: #05564B;
+  --tulip-bg-color: #FF8787;
+  --Languid-bg-color: #D0D1E1;
+  --BRIGHT-GREY-bg-color: #EBECEF;
+  --diamond-bg-color: #B7E3FF;
+  --SAPPHIRE-bg-color: #0856CF;
+  --bgColor: #b3005E;
+  --bgColor2: #060047;
+  --bgColorBody: #1f1f1f;
+  --btn-color: #7366e6;
+  --btn-hover-color: #140979;
+  --textColor1:#060047;
+  --textColor2:#eaddcd;
+  --link-color:#fff;
+  
 }
