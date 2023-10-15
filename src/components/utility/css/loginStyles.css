@@ -6,6 +6,7 @@ svg{
 }
 
 .login__main__container{
+    height: 450px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

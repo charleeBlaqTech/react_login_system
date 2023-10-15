@@ -3,9 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import "./utility/css/loginStyles.css";
 
 
-// import {} from "react-icons/fc";
-// import { FaGoogle, FaGithub, } from "react-icons/fa";
-// FaKey
 const Login = () => {
 
   const [email, setEmail] = useState('');
@@ -18,22 +15,27 @@ const Login = () => {
     e.preventDefault();
 
     try {
-  
-      const response = await fetch('https://sig-staging-api-a4c37da3d933.herokuapp.com/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
 
-      if (response.ok) {
-        navigate('/dashboard')
-      } else {
-        setErrorMessage("The login credentials is either not correct/mismatch");
-        setEmail("");
-        setPassword("");
+      if(email !== "" || password !== ""){
+        const response = await fetch('https://sig-staging-api-a4c37da3d933.herokuapp.com/auth/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email, password }),
+            });
+
+          if (response.ok) {
+                navigate('/dashboard')
+          }else{
+              setErrorMessage("The login credentials is either not correct/mismatch");
+              setEmail("");
+              setPassword("");
+          }
+      }else{
+        setErrorMessage("The inputs cannot be empty...");
       }
+      
     } catch (error) {
       setErrorMessage(error.message)
     }
