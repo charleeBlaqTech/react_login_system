@@ -109,10 +109,10 @@
 
 
 .bottom__dashboard__ul{
-    margin-bottom: 8.44rem;
+    margin-bottom: 4.44rem;
     display: flex;
     flex-direction: column;
-    gap: 12rem;
+    gap: 20rem;
 }
 
 .bottom__dashboard__ul .top__list{
@@ -463,7 +463,7 @@
 .contents__wrapp p:last-child{
     color: #AF202D;
 }
-.contents__wrapp p label{
+.contents__wrapp label{
     color: var(--grey-800, #34373F);
     font-family: Manrope;
     font-size: 0.6875rem;
@@ -471,7 +471,7 @@
     font-weight: 400;
     line-height: normal;
 }
-.contents__wrapp label:last-child{
+.contents__wrapp p:last-child label{
     color: var(--red-600, #AF202D);
 
 }
