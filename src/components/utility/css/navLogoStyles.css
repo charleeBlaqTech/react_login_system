@@ -1,0 +1,10 @@
+.logo__container{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.logo__container svg{
+    width: 5.63863rem;
+    height: 1.60838rem;
+    fill: var(--Brand-Color, #32D583);
+}
