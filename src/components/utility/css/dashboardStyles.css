@@ -339,10 +339,15 @@
     flex-shrink: 0;
     border-radius: 0.5rem;
     border: 1px solid #E6E7EC;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .dashboard__table__container table{
     width: 100%;
+    border-collapse:collapse;
+    table-layout: fixed;
+    white-space: wrap;
 }
 
 .dashboard__table__container table tr{
@@ -374,6 +379,7 @@
     text-align: center;
     padding-left: 1.5rem;
     padding-right: 4.38rem;
+    width: fit-content;
 }
 
 
@@ -515,4 +521,19 @@
 }
 .pagination__icon__wrapper .pagination__squares:nth-child(2),.pagination__icon__wrapper .pagination__squares:nth-child(3){
     background: #F5F5F5;
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+    .dashboard__table__container table{
+        width: 64rem;
+        border-collapse: collapse;
+        table-layout:auto;
+        white-space: wrap;
+    }
+
+   
+    
 }

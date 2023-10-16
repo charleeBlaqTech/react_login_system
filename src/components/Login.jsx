@@ -1,8 +1,9 @@
-import React, { useState} from 'react';
+import React, { useState, useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./utility/css/loginStyles.css";
 import {Google, Github, Sso} from "../components/icons/Icons";
 import {NavLogo} from "../components/icons/DashboardIcons";
+import { AuthContext} from "./UserContext"
 
 
 const Login = () => {
@@ -11,7 +12,8 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const navigate= useNavigate();
-
+  const {login}= useContext(AuthContext);
+  
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -28,6 +30,7 @@ const Login = () => {
             });
 
           if (response.ok) {
+                login()
                 navigate('/dashboard')
           }else{
               setErrorMessage("The login credentials is either not correct/mismatch");
