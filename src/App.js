@@ -12,6 +12,7 @@ function App() {
           <Route path='/' element={<Navigate to="/login"/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/dashboard' element={<Dashboard/>}/>
+          <Route path='/*' element={<Navigate to="/login"/>}/>
       </Routes>
       </div>
     </BrowserRouter>
