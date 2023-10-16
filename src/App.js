@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Navigate  } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate, Switch} from 'react-router-dom';
 import './App.css';
 import Login from "./components/Login"
 import Dashboard from "./components/Dashboard"
@@ -9,10 +9,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
       <Routes>
-          <Route path='/' element={<Navigate to="/login"/>}/>
+          <Route path='/' exact element={<Navigate to="/login"/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/dashboard' element={<Dashboard/>}/>
           <Route path='*' element={<Navigate to="/"/>}/>
+      
       </Routes>
       </div>
     </BrowserRouter>
