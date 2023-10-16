@@ -9,10 +9,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
       <Routes>
-          <Route path='/' exact element={<Navigate to="/login"/>}/>
+          
           <Route path='/login' exact element={<Login/>}/>
           <Route path='/dashboard' exact element={<Dashboard/>}/>
-          <Route path='*' element={<Navigate to="/login"/>}/>
+          <Route path='*' element={<Navigate to="/"/>}/>
+          <Route path='/' exact element={<Navigate to="/login"/>}/>
       
       </Routes>
       </div>
