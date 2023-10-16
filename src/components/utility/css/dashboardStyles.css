@@ -431,7 +431,7 @@
 
 .pop__up__card__wrapper{
     width: 100%;
-    padding-right: 7rem;
+    padding-right: 9.4rem;
     display: flex;
     align-items: flex-start;
     justify-content: right;
@@ -440,7 +440,7 @@
 
 .dropDown__box{
     position: absolute;
-    top: -1rem;
+    top: -0.6rem;
     display: inline-flex;
     padding: 0.5rem;
     flex-direction: column;
