@@ -8,7 +8,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <NavLogo/> */}
       <Routes>
           <Route path='/' element={<Navigate to="/login"/>}/>
           <Route path='/login' element={<Login/>}/>

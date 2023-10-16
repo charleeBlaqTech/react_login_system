@@ -30,6 +30,9 @@ svg{
     align-items: center;
     /* gap: 1.25rem; */
 }
+.login__main__container .form__text{
+    padding-bottom: 2rem;
+}
 
 
 .form__container {
@@ -257,6 +260,18 @@ svg{
 
 
 @media screen and (max-width: 500px){
+
+    .logo__container{
+        width: 100%;
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+        margin-bottom: 1.25rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    
     .login__main__container{
         width: 24rem;
     }
@@ -280,6 +295,35 @@ svg{
         width: 95%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 420px){
+
+    
+    .login__main__container{
+        width: 100%;
+    }
+
+    .form__input{
+        width: 100%;
+    }
+
+    .form__button {
+        width: 100%;
+    }
+
+    .form__other__login__method__wrapper{
+        width: 100%;
+    }
+    .other__methods__btn__container{
+        width: 100%;
+    }
+
+    .other__methods__btn__container button{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
