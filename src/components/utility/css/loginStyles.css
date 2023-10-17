@@ -167,10 +167,11 @@ svg{
     font-weight: 600;
     line-height: 1.5rem; /* 171.429% */
     cursor: pointer;
+    transition: 1.2s ease-in-out;
 }
 
 .form__button:hover {
-    background: var(--color-primary-dark);
+    transform: translateX(1rem);
 }
 
 .form__button:active {
@@ -298,6 +299,10 @@ svg{
         justify-content: center;
     }
 }
+
+
+
+
 @media screen and (max-width: 420px){
 
     

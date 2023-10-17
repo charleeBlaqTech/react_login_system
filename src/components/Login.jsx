@@ -21,7 +21,7 @@ const Login = () => {
     try {
 
       if(email !== "" || password !== ""){
-        const response = await fetch('https://sig-staging-api-a4c37da3d933.herokuapp.com/auth/login', {
+        const response = await fetch('https://user-auth-api-qjju.onrender.com/auth/user/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -29,6 +29,7 @@ const Login = () => {
             body: JSON.stringify({ email, password }),
             });
 
+            console.log(response)
           if (response.ok) {
                 login()
                 navigate('/dashboard')
