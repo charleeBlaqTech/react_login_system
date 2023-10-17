@@ -28,8 +28,6 @@ const Login = () => {
             },
             body: JSON.stringify({ email, password }),
             });
-
-            console.log(response)
           if (response.ok) {
                 login()
                 navigate('/dashboard')
