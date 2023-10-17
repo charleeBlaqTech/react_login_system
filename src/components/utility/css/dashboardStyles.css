@@ -1,6 +1,6 @@
 .dashboard__container{
     width:100vw;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 15.5rem auto;
 }
@@ -112,7 +112,7 @@
     margin-bottom: 4.44rem;
     display: flex;
     flex-direction: column;
-    gap: 20rem;
+    gap: 6rem;
 }
 
 .bottom__dashboard__ul .top__list{
@@ -333,8 +333,7 @@
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    height: 47.5rem;
-    /* padding-left: 1.5rem; */
+    height: 100%;
     margin-top: 1.5rem;
     flex-shrink: 0;
     border-radius: 0.5rem;
